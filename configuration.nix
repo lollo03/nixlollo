@@ -15,6 +15,11 @@
     ./pkgs.nix
   ];
 
+  services.xserver.enable = true;
+  # You may need to comment out "services.displayManager.gdm.enable = true;"
+  services.displayManager.sddm.enable = true;
+  services.xserver.desktopManager.plasma5.enable = true;
+
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -34,8 +39,6 @@
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
-  # Enable the X11 windowing system.
-  # services.xserver.enable = true;
 
   console.keyMap = "it";
 
@@ -43,10 +46,20 @@
   services.xserver.xkb.layout = "it";
 
   # Enable CUPS to print documents.
-  # services.printing.enable = true;
+  services.printing.enable = true;
+
+  nixpkgs.config.allowUnfree = true;
+  programs.xwayland.enable = true;
 
   # Enable sound.
   hardware.pulseaudio.enable = true;
+  services.distccd.zeroconf = true;
+  hardware.pulseaudio.zeroconf.discovery.enable = true;
+  # hardware.pulseaudio.extraConfig = ''
+  #   load-module module-native-protocol-tcp auth-anonymous=1
+  #   load-module module-zeroconf-discover
+  # '';
+  services.avahi.enable = true;
   # OR
   # services.pipewire = {
   #   enable = true;
@@ -71,7 +84,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.lollo = {
     isNormalUser = true;
-    extraGroups = ["wheel"]; # Enable ‘sudo’ for the user.
+    extraGroups = ["wheel" "video" "networkmanager"]; # Enable ‘sudo’ for the user.
     shell = pkgs.zsh;
   };
 

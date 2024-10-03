@@ -11,6 +11,15 @@ in {
     unstable.neovim
     git
     gh
+    pulseaudio
+    avahi
+    pavucontrol
+    nssmdns
+    telegram-desktop
+    owncloud-client
+    fastfetch
+    spotify
+    xwayland
     #
     # nvim
     #
