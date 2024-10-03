@@ -15,5 +15,10 @@
       source = ./nvim;
       target = "nvim";
     };
+    "waybar" = {
+      recursive = true;
+      source = ./waybar;
+      target = "waybar";
+    };
   };
 }

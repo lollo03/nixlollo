@@ -39,7 +39,6 @@
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
-
   console.keyMap = "it";
 
   # Configure keymap in X11
@@ -50,6 +49,7 @@
 
   nixpkgs.config.allowUnfree = true;
   programs.xwayland.enable = true;
+  programs.light.enable = true;
 
   # Enable sound.
   hardware.pulseaudio.enable = true;
@@ -84,7 +84,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.lollo = {
     isNormalUser = true;
-    extraGroups = ["wheel" "video" "networkmanager"]; # Enable ‘sudo’ for the user.
+    extraGroups = ["wheel" "video" "networkmanager"]; 
     shell = pkgs.zsh;
   };
 
