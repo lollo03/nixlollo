@@ -20,6 +20,7 @@ in {
     fastfetch
     spotify
     xwayland
+    networkmanagerapplet
     #
     # nvim
     #
