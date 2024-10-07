@@ -237,4 +237,6 @@ default_border none
 exec wl-paste -t text --watch clipman store --no-persist
 
 
+exec sleep 10 && owncloud 
+
 include /etc/sway/config.d/*
