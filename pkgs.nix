@@ -21,6 +21,7 @@ in {
     spotify
     xwayland
     networkmanagerapplet
+    neo-cowsay
     #
     # nvim
     #
