@@ -22,6 +22,7 @@ in {
     xwayland
     networkmanagerapplet
     neo-cowsay
+    python3
     #
     # nvim
     #
