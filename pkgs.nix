@@ -23,6 +23,7 @@ in {
     networkmanagerapplet
     neo-cowsay
     python3
+    btop
     #
     # nvim
     #
