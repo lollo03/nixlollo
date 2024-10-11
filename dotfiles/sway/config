@@ -230,6 +230,9 @@ bindsym $mod+plus exec brightnessctl --device "tpacpi::kbd_backlight" s +10%
 bindsym $mod+minus exec brightnessctl --device "tpacpi::kbd_backlight" s 10%-
 
 
+### Screenshoot
+bindsym print exec gscreenshot -c
+bindsym $mod+print exec gscreenshot
 
 
 
