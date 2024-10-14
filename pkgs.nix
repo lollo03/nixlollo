@@ -24,6 +24,8 @@ in {
     neo-cowsay
     python3
     btop
+    gscreenshot
+    trash-cli
     #
     # nvim
     #

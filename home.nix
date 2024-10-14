@@ -75,7 +75,7 @@ in {
         l = "exa -ahl";
         ll = "ls -l";
         lsblk = "lsblk -o NAME,FSTYPE,SIZE,FSUSED,LABEL,MOUNTPOINT,RM,RO,UUID";
-        rr = "trash";
+        rm = "trash";
         update = "sudo nixos-rebuild switch";
         v = "nvim";
       };
