@@ -97,6 +97,14 @@
     (nerdfonts.override {fonts = ["FiraCode" "DroidSansMono" "NerdFontsSymbolsOnly"];})
   ];
 
+
+virtualisation.podman = {
+  enable = true;
+  dockerCompat = true;
+};
+
+environment.systemPackages = [ pkgs.distrobox ];
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   # environment.systemPackages = with pkgs; [
