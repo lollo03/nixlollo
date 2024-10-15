@@ -26,6 +26,7 @@ in {
     btop
     gscreenshot
     trash-cli
+    eza
     #
     # nvim
     #

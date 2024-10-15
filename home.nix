@@ -73,7 +73,8 @@ in {
         duu = "du --max-depth=1 -h";
         edit = "cd /etc/nixos";
         l = "exa -ahl";
-        ll = "ls -l";
+        ll = "eza -l";
+        ls = "eza --icons";
         lsblk = "lsblk -o NAME,FSTYPE,SIZE,FSUSED,LABEL,MOUNTPOINT,RM,RO,UUID";
         rm = "trash";
         update = "sudo nixos-rebuild switch";
