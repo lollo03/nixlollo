@@ -27,6 +27,7 @@ in {
     gscreenshot
     trash-cli
     eza
+    wdisplays
     #
     # nvim
     #
