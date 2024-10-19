@@ -103,7 +103,12 @@ virtualisation.podman = {
   dockerCompat = true;
 };
 
-environment.systemPackages = [ pkgs.distrobox ];
+  environment.systemPackages = [ pkgs.distrobox ];
+
+
+  hardware.bluetooth.enable = true; # enables support for Bluetooth
+  hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
+  services.blueman.enable = true; 
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget

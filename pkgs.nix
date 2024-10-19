@@ -28,6 +28,7 @@ in {
     trash-cli
     eza
     wdisplays
+    bluez
     #
     # nvim
     #
