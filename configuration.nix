@@ -20,6 +20,7 @@
   # You may need to comment out "services.displayManager.gdm.enable = true;"
   services.displayManager.sddm.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
+  programs.kdeconnect.enable = true;
 
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
