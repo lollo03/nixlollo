@@ -29,6 +29,7 @@ in {
     eza
     wdisplays
     bluez
+    bambu-studio
     #
     # nvim
     #
