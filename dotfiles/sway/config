@@ -226,8 +226,8 @@ bindsym $mod+minus exec brightnessctl --device "tpacpi::kbd_backlight" s 10%-
 
 
 ### Screenshoot
-bindsym print exec gscreenshot -c
-bindsym $mod+print exec gscreenshot
+bindsym print exec grim - | wl-copy
+bindsym $mod+print exec grim -g "$(slurp)" - | wl-copy
 
 ### lock
 bindsym $mod+l exec swaylock

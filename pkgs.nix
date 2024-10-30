@@ -30,6 +30,7 @@ in {
     wdisplays
     bluez
     bambu-studio
+    slurp
     #
     # nvim
     #
