@@ -20,5 +20,9 @@
       source = ./waybar;
       target = "waybar";
     };
+    "swaylock" = {
+      source = ./swaylock;
+      target = "swaylock";
+    };
   };
 }
