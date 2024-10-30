@@ -13,6 +13,7 @@
     ./home.nix
     ./sway.nix
     ./pkgs.nix
+    ./wg.nix
   ];
 
 
