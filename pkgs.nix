@@ -31,6 +31,7 @@ in {
     bluez
     bambu-studio
     slurp
+    localsend
     #
     # nvim
     #
