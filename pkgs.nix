@@ -32,6 +32,12 @@ in {
     bambu-studio
     slurp
     localsend
+    busybox
+    nmap
+    wireshark
+    esptool
+    vscode
+    docker-compose  
     #
     # nvim
     #

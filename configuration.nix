@@ -16,7 +16,6 @@
     ./wg.nix
   ];
 
-
   services.xserver.enable = true;
   # You may need to comment out "services.displayManager.gdm.enable = true;"
   services.displayManager.sddm.enable = true;
@@ -35,7 +34,7 @@
   # Set your time zone.
   time.timeZone = "Europe/Rome";
 
-    # Select internationalisation properties.
+  # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
   console.keyMap = "it";
@@ -83,9 +82,15 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.lollo = {
     isNormalUser = true;
-    extraGroups = ["wheel" "video" "networkmanager"]; 
+    extraGroups = ["wheel" "video" "networkmanager" "wireshark"];
     shell = pkgs.zsh;
   };
+
+  virtualisation.docker.rootless = {
+    enable = true;
+    setSocketVariable = true;
+  };
+  virtualisation.docker.storageDriver = "btrfs";
 
   services.gnome.gnome-keyring.enable = true;
 
@@ -95,15 +100,13 @@
     (nerdfonts.override {fonts = ["FiraCode" "DroidSansMono" "NerdFontsSymbolsOnly"];})
   ];
 
-
-  environment.systemPackages = [ pkgs.distrobox ];
-
+  environment.systemPackages = [pkgs.distrobox];
 
   hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
-  services.blueman.enable = true; 
+  services.blueman.enable = true;
 
-    # Some programs need SUID wrappers, can be configured further or are
+  # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
   # programs.gnupg.agent = {
@@ -111,7 +114,7 @@
   #   enableSSHSupport = true;
   # };
 
-    # Copy the NixOS configuration file and link it from the resulting system
+  # Copy the NixOS configuration file and link it from the resulting system
   # (/run/current-system/configuration.nix). This is useful in case you
   # accidentally delete configuration.nix.
   system.copySystemConfiguration = true;
