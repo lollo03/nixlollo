@@ -82,14 +82,11 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.lollo = {
     isNormalUser = true;
-    extraGroups = ["wheel" "video" "networkmanager" "wireshark"];
+    extraGroups = ["wheel" "video" "networkmanager" "wireshark" "docker"];
     shell = pkgs.zsh;
   };
 
-  virtualisation.docker.rootless = {
-    enable = true;
-    setSocketVariable = true;
-  };
+  virtualisation.docker.enable = true;
   virtualisation.docker.storageDriver = "btrfs";
 
   services.gnome.gnome-keyring.enable = true;

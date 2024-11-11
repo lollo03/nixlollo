@@ -37,7 +37,9 @@ in {
     wireshark
     esptool
     vscode
-    docker-compose  
+    docker-compose
+    openssl
+    vlc
     #
     # nvim
     #
