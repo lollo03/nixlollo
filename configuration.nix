@@ -48,6 +48,7 @@
   nixpkgs.config.allowUnfree = true;
   programs.xwayland.enable = true;
   programs.light.enable = true;
+  services.flatpak.enable = true;
 
   # Enable sound.
   hardware.pulseaudio.enable = true;

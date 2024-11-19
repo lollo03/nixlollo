@@ -32,7 +32,6 @@ in {
     bambu-studio
     slurp
     localsend
-    busybox
     nmap
     wireshark
     esptool
