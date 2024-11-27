@@ -39,6 +39,7 @@ in {
     docker-compose
     openssl
     vlc
+    soulseekqt
     #
     # nvim
     #
