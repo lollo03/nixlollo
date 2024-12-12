@@ -40,6 +40,10 @@ in {
     openssl
     vlc
     soulseekqt
+    tigervnc
+    libreoffice-qt
+    hunspell
+    hunspellDicts.it_IT
     #
     # nvim
     #
