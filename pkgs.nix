@@ -44,6 +44,7 @@ in {
     libreoffice-qt
     hunspell
     hunspellDicts.it_IT
+    mullvad-vpn
     #
     # nvim
     #
