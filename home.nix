@@ -34,7 +34,7 @@ in {
       initExtra = ''
         complete -cf doas
         bind -s 'set completion-ignore-case on'
-        nofetch -UwU
+        fastfetch
       '';
 
       shellAliases = {
