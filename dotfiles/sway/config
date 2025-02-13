@@ -41,6 +41,16 @@ output * bg /etc/nixos/dotfiles/sway/bg.png fill
           timeout 300 'swaylock  \
           timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
           before-sleep 'swaylock'
+
+output HDMI-A-2 {
+  position 1745 0
+}
+
+output eDP-1 {
+ position 1845 1080
+}
+
+
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when

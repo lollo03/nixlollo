@@ -16,6 +16,7 @@
     ./wg.nix
   ];
 
+
   services.xserver.enable = true;
   # You may need to comment out "services.displayManager.gdm.enable = true;"
   services.displayManager.sddm.enable = true;
@@ -68,7 +69,6 @@
   # Enable touchpad support (enabled default in most desktopManager).
   services.libinput.enable = true;
 
-
   services.mullvad-vpn.enable = true;
   services.mullvad-vpn.package = pkgs.mullvad-vpn;
 
@@ -91,11 +91,9 @@
     shell = pkgs.zsh;
   };
 
-  virtualisation.docker.enable = true;
-  virtualisation.docker.storageDriver = "btrfs";
 
   services.gnome.gnome-keyring.enable = true;
-
+  services.tailscale.enable = true;
   security.polkit.enable = true;
 
   fonts.packages = with pkgs; [
