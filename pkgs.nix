@@ -45,6 +45,10 @@ in {
     hunspell
     hunspellDicts.it_IT
     prusa-slicer
+    caligula
+
+    jetbrains.jdk
+    jetbrains.idea-ultimate
     #
     # nvim
     #

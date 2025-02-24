@@ -91,6 +91,12 @@
     shell = pkgs.zsh;
   };
 
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    jetbrains.jdk
+  ];
+
+
 
   services.gnome.gnome-keyring.enable = true;
   services.tailscale.enable = true;

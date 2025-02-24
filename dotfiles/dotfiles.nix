@@ -24,5 +24,9 @@
       source = ./swaylock;
       target = "swaylock";
     };
+    "mako" = {
+      source = ./mako;
+      target = "mako";
+    };
   };
 }
